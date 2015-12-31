@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  owner: 1
+  user: 1
+  messages_count: 1
+
+two:
+  owner: 1
+  user: 1
+  messages_count: 1

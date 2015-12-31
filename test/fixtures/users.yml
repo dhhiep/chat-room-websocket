@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  permalink: MyString
+  status: false
+  lastest_sign_in: 2015-12-31 15:51:05
+
+two:
+  name: MyString
+  permalink: MyString
+  status: false
+  lastest_sign_in: 2015-12-31 15:51:05
