@@ -1,75 +1,20 @@
 #people-list.people-list
+  %ul.list.profile
+    %li.clearfix
+      %img{:alt => "avatar", :src => guest_avatar}/
+      .about
+        .name= guest_name
+        .status
+          %i.fa.fa-circle.online
+          online
   .search
-    %input{:placeholder => "search", :type => "text"}/
+    %input{:placeholder => "Search", :type => "text"}/
     %i.fa.fa-search
   %ul.list
     %li.clearfix
       %img{:alt => "avatar", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_01.jpg"}/
       .about
         .name Vincent Porter
-        .status
-          %i.fa.fa-circle.online
-          online
-    %li.clearfix
-      %img{:alt => "avatar", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_02.jpg"}/
-      .about
-        .name Aiden Chavez
-        .status
-          %i.fa.fa-circle.offline
-          left 7 mins ago
-    %li.clearfix
-      %img{:alt => "avatar", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_03.jpg"}/
-      .about
-        .name Mike Thomas
-        .status
-          %i.fa.fa-circle.online
-          online
-    %li.clearfix
-      %img{:alt => "avatar", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_04.jpg"}/
-      .about
-        .name Erica Hughes
-        .status
-          %i.fa.fa-circle.online
-          online
-    %li.clearfix
-      %img{:alt => "avatar", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_05.jpg"}/
-      .about
-        .name Ginger Johnston
-        .status
-          %i.fa.fa-circle.online
-          online
-    %li.clearfix
-      %img{:alt => "avatar", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_06.jpg"}/
-      .about
-        .name Tracy Carpenter
-        .status
-          %i.fa.fa-circle.offline
-          left 30 mins ago
-    %li.clearfix
-      %img{:alt => "avatar", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_07.jpg"}/
-      .about
-        .name Christian Kelly
-        .status
-          %i.fa.fa-circle.offline
-          left 10 hours ago
-    %li.clearfix
-      %img{:alt => "avatar", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_08.jpg"}/
-      .about
-        .name Monica Ward
-        .status
-          %i.fa.fa-circle.online
-          online
-    %li.clearfix
-      %img{:alt => "avatar", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_09.jpg"}/
-      .about
-        .name Dean Henry
-        .status
-          %i.fa.fa-circle.offline
-          offline since Oct 28
-    %li.clearfix
-      %img{:alt => "avatar", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_10.jpg"}/
-      .about
-        .name Peyton Mckinney
         .status
           %i.fa.fa-circle.online
           online
@@ -99,28 +44,6 @@
           %span.message-data-time 10:12 AM, Today
         .message.my-message
           Are we meeting today? Project has been already finished and I have results to show you.
-      %li.clearfix
-        .message-data.align-right
-          %span.message-data-time 10:14 AM, Today
-          \   
-          %span.message-data-name Olia
-          %i.fa.fa-circle.me
-        .message.other-message.float-right
-          Well I am not sure. The rest of the team is not here yet. Maybe in an hour or so? Have you faced any problems at the last phase of the project?
-      %li
-        .message-data
-          %span.message-data-name
-            %i.fa.fa-circle.online
-            Vincent
-          %span.message-data-time 10:20 AM, Today
-        .message.my-message
-          Actually everything was fine. I'm very excited to show this to our team.
-      %li
-        .message-data
-          %span.message-data-name
-            %i.fa.fa-circle.online
-            Vincent
-          %span.message-data-time 10:31 AM, Today
         %i.fa.fa-circle.online
         %i.fa.fa-circle.online{:style => "color: #AED2A6"}
         %i.fa.fa-circle.online{:style => "color:#DAE9DA"}
@@ -130,5 +53,5 @@
     %i.fa.fa-file-o
     \   
     %i.fa.fa-file-image-o
-    %button Send
+    %button#send_message Send
   / end chat-message

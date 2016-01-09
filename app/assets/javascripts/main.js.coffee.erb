@@ -1,0 +1,4 @@
+$ ->
+  channel = $dispatcher.subscribe 'public_room'
+  channel.bind 'list_users', (data) ->
+    console.log 'channel event received: ' + data.ac

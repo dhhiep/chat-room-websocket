@@ -1,3 +1,4 @@
+
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -26,6 +27,9 @@ Rails.application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+  
+  # config.log_level = :debug
+  # config.logger = Logger.new(STDOUT)
 
   # Asset digests allow you to set far-future HTTP expiration dates on all assets,
   # yet still be able to expire them through the digest params.

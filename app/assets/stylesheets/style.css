@@ -23,6 +23,7 @@ body {
 }
 .people-list .search {
   padding: 20px;
+  position: relative;
 }
 .people-list input {
   border-radius: 3px;
@@ -30,17 +31,27 @@ body {
   padding: 14px;
   color: white;
   background: #6A6C75;
-  width: 90%;
+  width: 100%;
   font-size: 14px;
 }
 .people-list .fa-search {
-  position: relative;
-  left: -25px;
+  position: absolute;
+  right: 31px;
+  top: 33px;
+  font-size: 17px;
+  opacity: 0.8;
+  cursor: pointer;
 }
 .people-list ul {
   padding: 20px;
-  height: 533.5px;
-  overflow-y: scroll;
+  height: 458.5px;
+  overflow-y: auto;
+  padding-top: 0px;
+}
+.people-list ul.profile {
+  padding: 20px;
+  height: 75px;
+  overflow: hidden;
 }
 .people-list ul li {
   padding-bottom: 20px;
